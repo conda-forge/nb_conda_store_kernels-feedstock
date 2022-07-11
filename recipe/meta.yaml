@@ -1,5 +1,5 @@
 {% set name = "nb_conda_store_kernels" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 589efffccf94a0d65f7501c0e2de6f40251b70aebc480c57c0fbe5edad8d6fda
+  sha256: 4c4d19a16c1ed338633d11785a8857c0ba597ee5e6d7e1383d7bbfda1fdf1886
 
 build:
   number: 0
-  skip: True  # [win or osx]
+  skip: true  # [win or osx]
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "Launch Jupyter kernels from Conda-Store"
+  summary: Launch Jupyter kernels from Conda-Store
   description: |
     This extension enables a Jupyter Notebook or JupyterLab
     application to access environments stored in Conda-Store and run
