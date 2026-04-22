@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 589efffccf94a0d65f7501c0e2de6f40251b70aebc480c57c0fbe5edad8d6fda
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win or osx]
 
 requirements:
